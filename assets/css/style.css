@@ -1,0 +1,112 @@
+:root {
+    --transition: all 0.6s ease;
+    --black:#000; 
+    --white:#fff;
+    --lightgrey: #f9f9f9;
+    --midgrey:  #dbdbdb;
+    --blue:#87ceeb;
+    --green: rgb(72,225,12);
+    --dkGrey: #333;
+  }
+
+header {
+    border: 1px dashed var(--midgrey);
+    background-image: url(../images/DSCF0230F.JPG);
+    background-size: cover;
+    border-radius: 150% 150% 15px 15px;
+}
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: garmond;
+    background-color: var(--dkGrey);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px var(--midgrey);
+    border-radius: 15px;
+    background-color: var(--blue);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+    border-radius: 15px;
+    box-shadow: inset 0 0 3px var(--midgrey);
+  }
+
+  
+
+    .input {
+        border-radius: 3% 12%;
+        border: 1px outset var(--green);
+        cursor: cell;
+    }
+
+    .input:hover {
+        border-radius: 3% 12%;
+        border: 1px inset var(--blue);
+    }
+
+    #mainHead {
+        text-align: center;
+        padding: 1%;
+        font-size: 3rem;
+    }
+
+    .subHead {
+        font-weight: 550;
+    }
+
+    .subHead, #now, #imaTenki {
+        text-align: center;
+    }
+
+    .container {
+        border: 1px dashed var(--midgrey);
+        background-image: url(../images/DSCF0230.JPG);
+        background-size: cover;
+        border-radius: 15px 15px 150% 150%;
+        height: 120px;
+        text-align: center;
+        place-content: center;
+        margin-top: .2%;
+        padding-top: 40px;
+    }
+
+    .column {
+        border-radius: 2px 10px 10px 25px;
+        border: 1px inset var(--midgrey);
+        overflow-y: scroll;
+      }
+
+    #goButton {
+        display: inline-block;
+        border-radius: 5px 15px 5px 3px;
+        border: 1px outset var(--green);
+        background-color: var(--white);
+        padding: 2px;
+        font-size: 12px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+
+    #goButton:hover {
+        border: 1px outset var(--blue);
+        font-weight: 700;
+    }
+
+    #goButton:active {
+        border-radius: 5px 15px 5px 3px;
+        border: 1px inset var(--black)
+    }
