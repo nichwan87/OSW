@@ -29,3 +29,9 @@ document.getElementById('now').innerHTML = today + ' @ ' + t_str;
  setTimeout(timer,1000);
 }
 
+
+var apiKey = '624cdbe079aa79ed758b65843778f4ca'
+
+fetch('https://openweathermap.org/api')
+  .then(response => response.json());
+  .then(data => console.log(data));
