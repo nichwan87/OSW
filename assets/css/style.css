@@ -130,13 +130,25 @@ header {
   opacity: 86%;
   width: 46%;
   height: 180px;
+  text-align: center;
+  place-content: center;
 }
-
 
 
 .subHead {
   font-weight: 550;
   display: block;
+  margin: 1% 2% auto 5%;
+  position: relative;
+}
+
+#now, #imaTenki {
+  display: inline;
+  margin: 1% auto auto .2%;
+  position: relative;
+  border: 1px solid var(--blue);
+  border-radius: 3px;
+  padding: 5px;
 }
 
 
@@ -161,8 +173,8 @@ header {
 
   #history h2 {
     margin-top: 25px;
-    border: 1px outset var(--green);
-    background-color: var(--blue);
+    border: 1px outset var(--blue);
+    background-color: var(--green);
     background-size: cover;
     border-radius: 5px 15px 5px 3px;
     height: 30px;
@@ -178,6 +190,18 @@ header {
     cursor: pointer;
   }
   
+  #exhist {
+  border-radius: 5px 15px 5px 3px;
+  border: 1px outset var(--blue);
+  background-color: var(--green);
+  color: var(--dkGrey);
+  padding: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  opacity: 90%;
+  display: none;
+  }
+
   /*body*/
 
   #weather {
@@ -189,9 +213,9 @@ header {
     display: grid;
 	  place-items: center;
 	  height: 90vh;
-    width: 60%;
+    width: 70%;
     margin: 1% auto 1% 1%;
-    opacity: 86%;
+    opacity: 93%;
   }
 
   #stats {
@@ -204,9 +228,9 @@ header {
     display: grid;
 	  place-items: center;
 	  height: 90vh;
-    width: 36%;
-    margin: auto auto 1% 62%;
-    opacity: 86%;
+    width: 26%;
+    margin: auto auto 1% 72%;
+    opacity: 93%;
   }
 
     .column {
@@ -225,8 +249,8 @@ header {
         border-radius: 5px;
         border: 1px inset var(--blue);
         overflow-y: scroll;
-        margin-left: 10%;
-       display: none;
+        margin: 3% auto auto 15%;
+        display: none;
       }
 
       #xBtn {
@@ -244,10 +268,10 @@ header {
 
       footer {
         background-color: var(--blue);
-        width: 98%;
-        margin: auto 2% auto 1%;
+        width: 30%;
+        margin: auto 2% auto 38%;
         border-radius: 6px;
         text-align: center;
         height: 3rem;
-        padding-top: 10px;
+        padding-top: 15px;
       }
